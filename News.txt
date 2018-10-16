@@ -1,0 +1,28 @@
+<div class="fmc">
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="images/icone/unnamed.png" alt="Card image cap" style="height: 100px; width: 80px; margin: auto; padding-top: 30px">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Food Swab</h5>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/icone/Medical%20Visits.png" alt="Card image cap" style="height: 100px; width: 80px; margin: auto; padding-top: 30px">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Medical Visits</h5>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/icone/Corsi.png" alt="Card image cap" style="height: 100px; width: 80px; margin: auto; padding-top: 30px">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Courses</h5>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/icone/Food%20Waste.png" alt="Card image cap" style="height: 100px; width: 80px; margin: auto; padding-top: 30px">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Food Waste</h5>
+        </div>
+    </div>
+</div>
+</div>

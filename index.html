@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>ALSA Albanian Safety</title>
+    <link rel="icon" href="images/Alsa Logo.jpg">
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body style="background-color: #f8f9fa">
+<div class="cover" style="position: fixed; overflow-x: hidden; overflow-y: hidden; z-index: 1000"><img src="Untitled2.png" style="width: 100%;"></div>
+<header>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $(".cover").fadeOut(0);
+            }, 2500);
+
+            $('#btnReset').click(function() {
+                $(".cover").show();
+                setTimeout(function() {
+                    $(".cover").fadeOut(0);
+                }, 1500);
+            });
+        });
+    </script>
+    <style>
+        .dropdown:hover {
+            font-weight: bold;
+            transition: color 0.2s;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-top:0;
+        }
+        ::-webkit-scrollbar { width: 1px }
+    .dropdown:hover>.nav-link{
+        border-top: 2px solid #ef0937;
+    }
+    .dropdown:hover>.dropdown-menu{
+        display: block;
+
+    }
+
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 0;z-index: 999999 !important;position: fixed; padding-top: 0; padding-bottom: 0; width: 100%" >
+        <a class="navbar-brand" href="index.html"><img src="images/Alsa-Logo.png" style="width: 230px; position: relative;"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <ul class="nav-link dropdown-toggle" id="2">
+                        Services
+                    </ul>
+                    <div class="dropdown-menu" aria-labelledby="2">
+                        <a class="dropdown-item" href="#">Food Safety</a>
+                        <a class="dropdown-item" href="#">Health Safety at Workplace </a>
+                        <a class="dropdown-item" href="#">Start Up</a>
+                        <a class="dropdown-item" href="#">Feasibility Study</a>
+                        <a class="dropdown-item" href="#">E-Commerce</a>
+                        <a class="dropdown-item" href="#">Administrator Services</a>
+                        <a class="dropdown-item" href="#">Legal Services</a>
+                        <a class="dropdown-item" href="#">Platform</a>
+                        <a class="dropdown-item" href="#">E-Learning</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Platform<span class="sr-only">(current)</span></a>
+                </li>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="modal-content animate">
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" style="margin-left: 15px" placeholder="Enter Username" name="uname" required>
+                                        </br>
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" style="margin-left: 17px" placeholder="Enter Password" name="psw" required>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">E-Learning<span class="sr-only">(current)</span></a>
+                </li>
+                <div class="modal fade" id="exModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="modal-content animate">
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" style="margin-left: 15px" placeholder="Enter Username" name="uname" required>
+                                        </br>
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" style="margin-left: 17px" placeholder="Enter Password" name="psw" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">E-Commerce</a>
+                </li>
+            </ul>
+            <div class="icona">
+                <img src="images/cart.png" style="margin-right: 15px; margin-left: 10px; height: 25px; width: 25px">
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" >
+                    Language
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Albanian</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+</br>
+</br></br>
+</br></br>
+    <div class="about" style="width:73%; margin-left: auto;margin-right: auto; border: solid; border-color: #e31b22;">
+       <p style="margin: 20px; ">
+        <b>ALSA Albanian Safety Sh.p.k.</b> is an international company that operates mainly in the territory of the Republic of Albania and in the western Balkan area, offering integrated consulting services and technical assistance to public and private organizations.
+        The essential function is to be a real laboratory of European ideas for commercial development, defining strategic paths and using as key words Reliability and Professionalism.</br></br>
+
+        The strength of our company is to be able to offer a personalized service, from the preliminary stages, related to the start of new business initiatives, to the subsequent control of their development.
+
+        Choosing <b>ALSA Albanian Safety</b> means ensuring a qualified advisory service oriented towards the achievement of explicit and shared objectives.</br></br>
+
+           Together with you, we identify the spaces of flexibility and the potential of your company or your territory to offer you
+        interventions dedicated to specific needs, with a careful analysis of operating costs and revenue prospects.</br></br>
+       </p>
+    </div>
+
+    <div class="container categoryHolder"  >
+        <div class="categoryInfo" id="start">
+            <h3 style="padding-top: 20px; font-weight: bold;margin-left: 20px;">START UP</h3>
+            <h5 style=" margin-left: 20px";>We provide assistance for the establishment of a new Company in Albania and we guide you to the assembling of a team that has secure skills.
+                Our mission is to guide the features of the start up to let your business become attractive to other ones, aligning your work with the market situation, such as management style and products.</h5>
+            <a style=" margin-left: 20px";>
+                When evaluating a startup we keep in mind of all this parameters:
+                - if the market opportunity is big or small;
+                - if the timing is good, early or late;
+                - if the growth ambition is high or low;
+                - if the scalability is high or low;
+                - if the team structure is well balanced in skills & ownership;
+                - if the team commitment is high or low.
+                Our task is to guide you trough the initial part of a constitution and at last to success.
+            </a>
+        </div>
+
+        <div class="categoryInfo" id="feasibility"></div>
+
+        <div class="categoryInfo" id="ecommerce"></div>
+
+        <div class="categoryInfo" id="amministrativi"></div>
+
+        <div class="categoryInfo" id="legalservices"></div>
+
+        <div class="categoryInfo" id="platform"></div>
+
+        <div class="categoryInfo" id="elearning" ></div>
+
+        <div class="categoryInfo" id="food"></div>
+
+        <div class="categoryInfo" id="health"></div>
+
+
+        <style type="text/css">
+            .body {
+                width:100%;
+                float:left;
+                height:auto;
+                margin-top:40px;
+            }
+
+            .menu {
+                width:100%;
+                float:left;
+                height:auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .menu.active {
+                background-color:#ddd;
+                box-sizing: border-box;
+                padding:10px;
+                margin-top: 10px;
+            }
+
+            .menu.active .holder{
+                background-color:#ddd;
+                width:100%;
+                float:left;
+                box-sizing: border-box;
+                border:10px solid #fff;
+                padding:10px;
+            }
+
+        
+            .menu.active .child {
+                width:100%;
+                height:auto;
+                margin-top:5px;
+            }
+
+            .menu .child {
+                width:33.3%;
+                height:150px;
+                margin-top: 40px;
+                float:left;
+            }
+
+            .menu .child div{
+                display:inline-block;
+                padding-left:20px;
+            }
+
+
+            .menu .child img {
+                max-width:160px;
+                width:100%;
+            }
+
+            .menu .child.active {
+                background-color:#e31b22;
+            }
+
+            .menu.active .child div {
+                display:none;
+            }
+
+            .body .content {
+                margin-left:150px;
+                height:auto;
+                display:none;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            .body .content .subContent {
+                position:relative;
+                display:none;
+                box-sizing: border-box;
+            }
+
+            .body .content .subContent .image{
+                width:150px;
+                position:absolute;
+                bottom:0px;
+                top:0px;
+                left:0px;
+                float:left;
+                background-color:#DDDDDD;
+                box-sizing: border-box;
+                padding:10px;
+            }
+
+            .body .content .subContent .image .holder {
+                box-sizing: border-box;
+                border:10px solid #fff;
+                padding:10px;
+                position:absolute;
+                top:10px;
+                right:10px;
+                bottom:10px;
+                left:10px;
+            }
+
+             .body .content .subContent .image img{
+                width:200px !important;
+                margin-left:-56px;
+                margin-top:30px;
+            }
+
+            .body .content .subContent .contentBody{
+                margin-left:174px;
+                border: 3px solid #e31b22;
+            }
+
+            .clear {
+                clear:both;
+            }
+        </style>
+
+        <div class="body">
+            <div class="menu">
+                <div class="holder">
+                    <div class="child" data-name='a'><img src="images/Bianco/ELearning.png" onmouseover="this.src='images/Nero/Elearning.png';" onmouseout="this.src='images/Bianco/Elearning.png';">
+                        <div style="font-weight: bold">E-learning</div>
+                    </div>
+
+                    <div class="child" data-name='b'><img src="images/Bianco/amministrativi.png" onmouseover="this.src='images/Nero/amministrativi.png';" onmouseout="this.src='images/Bianco/amministrativi.png';">
+                        <div style="font-weight: bold">Administrative Services</div>
+                    </div>
+
+                    <div class="child" data-name='c'><img src="images/Bianco/start-up.png" onmouseover="this.src='images/Nero/start.png';" onmouseout="this.src='images/Bianco/start-up.png';">
+                        <div style="font-weight: bold">Start-up</div>
+                    </div>
+
+                    <div class="child" data-name='d'><img src="images/Bianco/food.png" onmouseover="this.src='images/Nero/food.png';" onmouseout="this.src='images/Bianco/food.png';">
+                        <div style="font-weight: bold">Food safety</div>
+                    </div>
+
+                    <div class="child" data-name='e'><img src="images/Bianco/legali.png" onmouseover="this.src='images/Nero/legali.png';" onmouseout="this.src='images/Bianco/legali.png';">
+                        <div style="font-weight: bold">Legal Services</div>
+                    </div>
+
+                    <div class="child" data-name='f'><img src="images/Bianco/fattibilita.png" onmouseover="this.src='images/Nero/fattibilita.png';" onmouseout="this.src='images/Bianco/fattibilita.png';">
+                        <div style="font-weight: bold">Feasibility Study</div>
+                    </div>
+
+                    <div class="child" data-name='g'><img src="images/Bianco/health.png" onmouseover="this.src='images/Nero/health.png';" onmouseout="this.src='images/Bianco/health.png';">
+                        <div style="font-weight: bold; bottom: auto">Health Safety<br/> at workplace</div>
+                    </div>
+
+                    <div class="child" data-name='h'><img src="images/Bianco/Piattaforma.png" onmouseover="this.src='images/Nero/piattaforma.png';" onmouseout="this.src='images/Bianco/Piattaforma.png';">
+                        <div style="font-weight: bold">Platform</div>
+                    </div>
+
+                    <div class="child" data-name='j'><img src="images/Bianco/ecommerce.png" onmouseover="this.src='images/Nero/ecommerce.png';" onmouseout="this.src='images/Bianco/ecommerce.png';">
+                        <div style="font-weight: bold">E-commerce</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" style="box-sizing: border-box; padding: 10px">
+                <div class="subContent" id='a'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/ELearning.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">E-LEARNING</h3>
+                        <h5>Through our technological e-learning platform, we offer a wide range of basic
+                            and specific training to fill the training needs that the safety regulation imposes
+                            on companies. A computer with internet connection, now days, it’s sufficient to
+                            cancel the distances that hinder the development of new knowledge and skills.
+                            At the end of the course we will release a certificate that will implement the
+                            employee electronic file prepared on the Web System Platform. At the same time,
+                            the date of the next update will be generated, according to the periodicity
+                            expected for that type of course.
+                            We provide this type of course and update, depending on the risk level:</h5>
+                        <a>
+                            - Basic Employee training;</br>
+                            - Fire rescue training;</br>
+                            - First aid training;</br>
+                            - Safety workers representative training;</br>
+                            - Employer training;</br>
+                            - Manager training;</br>
+                            - Supervisor training;</br>
+                            - H.A.C.C.P. training.
+                        </a>
+                    </div>
+                </div>
+                <div  class="subContent" id='b'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/amministrativi.png" style="width: 100%"/>
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">ADMINISTRATIVE SERVICES</h3>
+                        <a>
+                            - General and industrial accounting;</br>
+                            - Periodic VAT declarations and execution of all company tax practices and obligations;</br>
+                            - Tax advice on tax regulations, registration at the financial offices and management;</br>
+                            - Preparation of annual financial statements;</br>
+                            - Preparation of periodic reports and management control;</br>
+                            - Budget analysis and Financial intelligence;</br>
+                            - Service for electronic-invoice;</br>
+                            - Paycheck count service.
+                        </a>
+                    </div>
+                </div>
+                <div class="subContent" id='c'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/start-up.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">START UP</h3>
+                        <h5>We provide assistance for the establishment of a new Company in Albania and we guide you to the assembling of a team that has secure skills.
+                            Our mission is to guide the features of the start up to let your business become attractive to other ones, aligning your work with the market situation, such as management style and products.</h5>
+                        <a>
+                            When evaluating a startup we keep in mind of all this parameters:</br>
+                            </br>
+                            - if the market opportunity is big or small;</br>
+                            - if the timing is good, early or late;</br>
+                            - if the growth ambition is high or low;</br>
+                            - if the scalability is high or low;</br>
+                            - if the team structure is well balanced in skills & ownership;</br>
+                            - if the team commitment is high or low.</br>
+                            </br>
+                            Our task is to guide you trough the initial part of a constitution and at last to success.
+                        </a>
+                    </div>
+                </div>
+                <div  class="subContent" id='d'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/food.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">FOOD SAFETY</h3>
+                        <h5>We provide the elaboration of the food self-control plan, behind a preliminary inspection, for the activation of a system based on the identification of critical points, their monitoring and verification.</h5>
+                        <a>
+                            </br>
+                            <strong>Elaboration of the procedures for good hygiene practice, including traceability.</strong>
+                            We inspect how does the implementation of the HACCP system works through two or three annual inspections inside the activity.</br>
+                            Every inspection will produce verification reports.</br>
+                            Update of the self-control plan following changes in legislation and / or introduction of new supply chains during the work phases.</br>
+                            </br>
+                            <strong>Sample and tampons collection service</strong>
+                            Swab Control on work surfaces (cutting boards, etc.) or on equipment (slicers)
+                            to verify the presence of organic matter, and the determination of Staphylococcus Coagulasis +, Escherichia Coli and possibly Sa lmonella Sppp according to the type of product;</br>
+                            Swab control on the hands of the employees;</br>
+                            Swab control on refrigerators, for the research of ifomycetes, Listeria m. and Salmonella Sppp.</br>
+                            </br>
+                            <strong>Partial technical advice service</strong>
+                            Presence by a competent technician in the opening operations of finds and / or food samples at the analysis laboratories in charge of the official control and the consequent expert operations.</br>
+                        </a>
+                    </div>
+                </div>
+                <div class="subContent" id='e'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/legali.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">LEGAL SERVICES</h3>
+                        <h5>We provide assistance for the establishment of a new Company in Albania and we guide you to the assembling of a team that has secure skills.
+                            Our mission is to guide the features of the start up to let your business become attractive to other ones, aligning your work with the market situation, such as management style and products.</h5>
+                        <a>
+                            - Corporate, commercial and contract law;</br>
+                            - Banking and tax law;</br>
+                            - Labor law;</br>
+                            - Credit recovery;</br>
+                            - Commercial licenses;</br>
+                            - Trademarks registration;</br>
+                            - Copyright service to success.</br>
+                        </a>
+                    </div>
+                </div>
+                <div class="subContent" id='f'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/fattibilita.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">FEASIBILITY STUDY</h3>
+                        <h5>The service consists in the analysis and in the analytical evaluation of the existing company characteristics, calculating the costs and the possible results of a project on the basis of a preliminary idea.</h5>
+                        </br>
+                        <a>
+                            The feasibility study consists of an illustrative report containing:</br>
+                            </br>
+                            <strong>a)</strong> the functional, technical, management, economic-financial characteristics of the works to be carried out;</br>
+                            </br>
+                            <strong>b)</strong> the analysis of the possible alternatives with respect to the identified implementation solution;</br>
+                            </br>
+                            <strong>c)</strong> verification of the possibility of realization through the public private partnership;</br>
+                            </br>
+                            <strong>d)</strong> the analysis of the state of affairs, in its possible architectural, geological, socio-economic, administrative components;</br>
+                            </br>
+                            <strong>e)</strong> the description, for the purposes of the prior assessment of the environmental sustainability and the landscape compatibility of the intervention, of the requirements of the project to be designed, of the characteristics and connections with the context in which the intervention fits, with particular reference to the verification environmental, historical, archaeological, landscape restrictions that interfere with the areas or buildings affected by the intervention, as well as the identification of appropriate measures to safeguard environmental protection and cultural and landscape values.</br>
+                            </br>
+                        </a>
+                    </div>
+                </div>
+                <div  class="subContent" id='g'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/health.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">HEALTH SAFETY AT WORKPLACE</h3>
+                        <h5>We provide assistance for the establishment of a new Company in Albania and we guide you to the assembling of a team that has secure skills.
+                            Our mission is to guide the features of the start up to let your business become attractive to other ones, aligning your work with the market situation, such as management style and products.</h5>
+                        </br>
+                        <a>
+                            <strong>SURVEY OF WORKING ENVIRONMENTS</strong>
+                            Finalized for the preparation of the Risk Assessment Document (DVR), the Single Document for the Assessment of Interference Risks (DUVRI) and the Business Emergency Plan.
+                            </br>
+                            </br>
+                            <strong>ELABORATING THE DOCUMENT DIVALUTATION OF RISKS</strong></br>
+                            With the evaluation of all risk including specific risks such as:</br>
+                            Chemical Agents;</br>
+                            Noise;</br>
+                            Vibration;</br>
+                            Ionizing Radiation and Radon;</br>
+                            Electromagnetic fields;</br>
+                            Artificial Optical Radiation;</br>
+                            Microclimate;</br>
+                            Asbestos;</br>
+                            Biological agents;</br>
+                            Cancerogens.</br>
+                            </br>
+                            <strong>The Risk Assessment also includes;</strong></br>
+                            1. Identification of PPE (Personal Protective Equipment) for the performance of duties, formation, information and training;</br>
+                            2. Assessment of risks specific to the tasks of the types of workers;</br>
+                            3. The Training, Information and Training Program;</br>
+                            4. Evaluation of specific risks specific to the tasks of the types of workers.</br>
+                            </br>
+                            <strong>DRAFTING OF THE SAFETY OPERATING INSTRUCTIONS (IOS).</strong></br>
+                            </br>
+                            <strong>DRAFTING OF SAFETY MANAGEMENT PROCEDURES (PGS).</strong></br>
+                            </br>
+                            <strong>MODULE NECESSARY TO THE MANAGEMENT OF SAFETY IN THE WORKPLACE</strong></br>
+                            </br>
+                            <strong>WORKER INFORMATION FILE</strong></br>
+                            </br>
+                            <strong>DRAFTING THE BUSINESS EMERGENCY PLAN</strong></br>
+                            With the evacuation plan and fire fighting plans, rules of conduct in case of emergency.</br>
+                            </br>
+
+                            <strong>PROGRAMMING OF THE EVACUATION TESTS AND PROGRAMMING</strong></br>
+                            </br>
+
+                            <strong>PROGRAMMING AND CONVOCATION OF THE PERIODIC MEETING</strong></br>
+                            For Companies with more than 15 employees, with relative drafting of the Periodic Meeting report.</br>
+                            </br>
+                            <strong>DRAFTING OF THE DUVRI</strong></br>
+                            Single Document for Interference Risks for Health and Safety of Workers.</br>
+                            </br>
+                            <strong>MANAGEMENT SURVEY FOR SAFETY</strong></br>
+                            Inspection every six months to check if the conditions of the workplace and the duties have remained unchanged or not.</br>
+
+                            </br>
+                            <strong>DRAFT UP UPDATES</strong></br>
+                            If there are substantial changes detected during the management inspection:</br>
+                            - DVR update;</br>
+                            - Updating of individual risks: chemical, noise, biological agents, vibrations, ionizing radiation and radon, etc.;</br>
+                            - DUVRI update;</br>
+                            - Updating of the Company Emergency Plan and / or the evacuation plan and fire prevention plans;</br>
+                            - Assistance and advice in case of prescriptions of the competent control bodies;</br>
+                            </br>
+                            <strong>Environmental measurements and monitoring.</strong></br>
+
+                            Wich:
+                            - Monitoring of the concentration of radon gas in underground workplaces;</br>
+                            - Phonometric measurement of noise exposure levels;</br>
+                            - Measurement of vibration exposure levels of the hand-arm system (HAV) and the whole body(WVB);</br>
+                            - Measurement of the intensity of electromagnetic fields and related exposure levels;</br>
+                            - Measurement of the emission intensity of Artificial Optical radiation;</br>
+                            - Mapping and echoing materials containing asbestos and related levels of exposure.</br>
+                            </br>
+                            <strong>WORK MEDICINE</strong></br>
+                            </br>
+                            <strong>ANNUAL MANAGEMENT OF SANITARY SURVEILLANCE</strong></br>
+                            1. Appointment of the competent Doctor;</br>
+                            2. Visit of the workplace by the competent Doctor;</br>
+                            3. Collaboration in the drafting of the Risk Assessment Document (DVR);</br>
+                            4. Drafting of the Health Surveillance Protocol.</br>
+                            </br>
+                            <strong>GENERAL MEDICAL VISITS AND RELEASE SUITABILITY</strong></br>
+                            Annual general medical visit and/or with different periodicity;</br>
+                            Morpho-functional examination of the spine, spirometry and/or visus;</br>
+                            Pre-appointment medical examination;</br>
+                            Eligibility reviews for the worker's job.</br>
+                            </br>
+                            <strong>SPECIALIST MEDICAL VISITS FOR PROFESSIONAL FIGURES AT RISK</strong></br>
+                            Morpho-functional examination of the spine, basic haematochemical tests (complete blood count with glycemic formula, blood glucose, GOT, GTP) and / or Audiometry and / or resting EGC;</br>
+                            Antitetanic vaccination; Chest X-ray;</br>
+                            Test Absence of drugs (opioids, cocaine, cannabinoids);</br>
+                            Test of absence of psychotropic substances (barbiturates, benzodiazepine);</br>
+                            </br>
+                            <strong>FIRE PREVENTION</strong></br>
+                            Design of work environments and assistance for the release of C.P.I. (Fire Prevention Certificate).</br>
+                            Site inspection;</br>
+                            Technical reports with technical report;</br>
+                            Presentation of the documentation necessary for the issue of the ICC to the Provincial Command of the Fire Brigade.</br>
+                            </br>
+                            <strong>RENEWAL OF THE ICC</strong></br>
+                            </br>
+                            <strong>OPINIONS OF CONFORMITY ON A PROJECT</strong></br>
+                            </br>
+                            <strong>DIRECTIVE ADAPTATIONS ON CONSTRUCTION SITES</strong></br>
+                            </br>
+                            Assistance for the obligations related to the safety of workers in temporary or mobile construction sites.</br>
+                            <strong>1.</strong> Drafting of the Corporate Risk Accounting Document (DVR), with identification of all specific risks related to the individual tasks and identification of PPE (Personal
+                            Protection Devices) to be adopted;</br>
+                            <strong>2.</strong> Drafting of the Single Risk Assessment Document where necessary;</br>
+                            <strong>3.</strong> Drafting of the Operational Safety Plan (POS) for each site;</br>
+                            <strong>4.</strong> Drafting of the Safety Coordination Plan (PCS) for each construction site;</br>
+                            <strong>5.</strong> Activation of health surveillance and appointment of the competent doctor;</br>
+                            <strong>6.</strong> Training on First Aid.</br>
+                        </a>
+                    </div>
+                </div>
+                <div  class="subContent" id='h'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/Piattaforma.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">PLATFORM</h3>
+                        <h5>To manage the Safety and Health service in environments and workplaces,</br>
+                            ALSA Albanian Safety Sh.p.k. provides its WEB SYSTEM platform for:</h5>
+                        </br>
+                        <a>
+                            - the filing and management of deadlines, "uncovered positions" related to the Training and Health Surveillance of all staff;
+                            - storage and classification of documentation;</br>
+                            - accessible through a username and password provided by us;</br>
+                            - archive of the individual devices supplied to the employee with the respective delivery report countersigned for receipt by the employee himself;</br>
+                            - Archive of all the medical examinations to which it has been subjected, the type of visit, the report that certifies the suitability for the task performed, any prescriptions and/or limitations, the date on which it will be subjected to a medical examination again.</br>
+                        </a>
+                    </div>
+                </div>
+                <div  class="subContent" id='j'>
+                    <div class="image">
+                        <div class="holder">
+                            <img src="images/Bianco/ecommerce.png" style="width: 100%" />
+                        </div>
+                    </div>
+                    <div style="padding: 20px" class="contentBody">
+                        <h3 style="font-weight: bold; color: #e31b22">E-COMMERCE</h3>
+                        <h5>Our Ecommerce section it’s offered to satisfy multiple needs of your business and by providing them a wider range of products in a easier or faster way.
+                            You can find:</h5>
+                        </br>
+                        <a>
+                            - Books;</br>
+                            - Manuals;</br>
+                            - Equipment;</br>
+                            - Presidia;</br>
+                            - Online training courses;</br>
+                            - Classrom training course;</br>
+                            - Request quotation of services;</br>
+                            - Privacy Forms;</br>
+                            - Document models;</br>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+
+        <script>
+            $(document).ready(function(){
+                $(".menu .child").on('click', function(){
+                    $(".menu").addClass("active");
+                    var name = $(this).data('name');
+                    $(".about").hide();
+
+                    $(".presentation p").hide();
+                    $(".menu .child").removeClass("active");
+                    $(this).addClass("active");
+
+                    $(".menu").animate({
+                        "width": "100px"
+                    }).addClass("active");
+
+                    $(".content").delay(300).slideDown();
+
+                    $(".content").find(".subContent").hide();
+
+
+                    $activeNow = $(".content").find("#"+name);
+                    $activeNow.show();
+
+                    $(".menu .child").each(function(){
+                        var dataName = $(this).data("name");
+                        var new_name = "images/transparent/" + dataName + ".png";
+                        
+                        $(this).find("img").attr("src",new_name);
+                        $(this).find("img").removeAttr("onmouseover").removeAttr("onmouseout");
+                    });
+
+                });
+
+
+                // $(".presentation .link").on('click', function () {
+                //     $(".presentation .link").removeClass("active");
+                //     $(this).addClass("active");
+
+                //     var data = $(this).data("name");
+                //     $(".categoryInfo").hide();
+                //     $(".presentation p").hide();
+                //     $(".about ").hide();
+                //     $(".categoryInfo#"+data).show();
+
+                //     $(".presentation").css({
+                //         "position":"absolute",
+                //         "z-index":2,
+                //         "padding-bottom": "30px",
+                //         'padding-right':"100px"
+                //     }).animate (
+                //         {
+                //         "width":"350px",
+                //         "top":"0px",
+                //         "left":"10px",
+                //         "height":"600px",
+                //         }
+                //     ).addClass("fixed");
+
+
+
+                //     $(".categoryInfo").height($(".presentation").height());
+
+
+                //     $(".presentation .link").removeClass("col-sm-6 col-md-4").addClass("col-12 small");
+                // });
+            });
+        </script>
+    </div>
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 copyright">ALSA Albanian Safety Sh.p.k. </br> Rr. 'Ludovik Saraçi', zona kadastale nr.2, 4001 Shkodër, Shqipëri</div>
+            <div class="col-md-4"><img src="images/Mappa-1600x0000.png" style="width: 450px"></div>
+            <div class="col-md-4">
+                <a href="https://www.facebook.com/ALSA-Albanian-Safety-Shpk-271028123739232/?modal=admin_todo_tour" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/AlbanianSh" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/company/12580816/admin/updates/" class="fa fa-linkedin"></a>
+                <a href="Brochure%20Eng%20last.pdf" download class="fa fa-aboutus" style="padding-top: 35px; height: 36px; width: 75px; text-align: center; font-family: 'Roboto', sans-serif">About us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
